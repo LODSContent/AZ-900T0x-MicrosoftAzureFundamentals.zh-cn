@@ -1,25 +1,25 @@
 ---
 wts:
-    title: '19 - 使用 Azure 定价计算器（10 分钟）'
-    module: '模块 06：介绍 Azure 成本管理和服务级别协议'
+  title: 19 - 使用 Azure 定价计算器（10 分钟）
+  module: 'Module 06: Describe Azure cost management and service level agreements'
 ---
-# 19 - 使用 Azure 定价计算器（10 分钟）
+# <a name="19---use-the-pricing-calculator-10-min"></a>19 - 使用 Azure 定价计算器（10 分钟）
 
 在本演练中，我们将使用 Azure 定价计算器生成 Azure 虚拟机和相关网络资源的成本估算。
 
-# 任务 1：配置定价计算器
+# <a name="task-1-configure-the-pricing-calculator"></a>任务 1：配置定价计算器
 
 在此任务中，我们将使用 Azure 定价计算器来估算示例基础结构的成本。 
 
-**备注**：为创建 Azure 定价计算器估算，本演示提供了 VM 和相关资源的示例配置。使用此示例配置或在 Azure 定价计算器中提供有关你*实际*资源要求的详细信息。
+<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To create an Azure Pricing Calculator estimate, this walkthrough provides example configurations for the VM and related resources. Use this example configurations or provide the Azure Pricing Calculator with details of your <bpt id="p1">*</bpt>actual<ept id="p1">*</ept> resource requirements instead.
 
-1. 在浏览器中，导航至 [Azure 定价计算器](https://azure.microsoft.com/zh-cn/pricing/calculator/)网页。
+1. 在浏览器中，导航至 [Azure 定价计算器](https://azure.microsoft.com/en-us/pricing/calculator/)网页。
 
-2. 要添加 VM 配置的详细信息，请在 **“产品”** 选项卡上单击 **“虚拟机”**。向下滚动以查看虚拟机的详细信息。 
+2. 要添加 VM 配置的详细信息，请在“产品”选项卡上单击“虚拟机” 。向下滚动以查看虚拟机的详细信息。 
 
-3. 将 **“你的估算”** 和 **“虚拟机”** 文本替换为 Azure 定价计算器估算和 VM 配置的更具描述性的名称。本演示示例使用 **“我的定价计算器估算”** 进行估算，**Windows VM** 进行 VM 配置。
+3. Replace <bpt id="p1">**</bpt>Your Estimate<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Virtual Machines<ept id="p2">**</ept> text with more descriptive names for your Azure Pricing Calculator estimate and your VM configuration. This walkthrough example uses <bpt id="p1">**</bpt>My Pricing Calculator Estimate<ept id="p1">**</ept> for the estimate, and <bpt id="p2">**</bpt>Windows VM<ept id="p2">**</ept> for the VM configuration.
 
-   ![此屏幕截图显示了 Azure 定价计算器估算网页中的 VM 配置区域。突出显示的估算名称和 VM 配置名称指出了如何将估算名称和 VM 配置名称添加到 Azure 定价计算器估算中。](../images/1901.png)
+   ![Screenshot of the vm configuration area within the Azure pricing calculator estimate webpage. The highlighted estimate name and vm configuration name indicate how to add an estimate name and a vm configuration name to an Azure pricing calculator estimate.](../images/1901.png)
 
 4. 修改默认的 VM 配置。
 
@@ -27,75 +27,75 @@ wts:
     | -- | -- |
     | 区域 | **北欧** |
     | 操作系统 | **Windows** |
-    | 类型 | **（仅限 OS）** |
-    | 层 | **标准** |  
-    | 实例 | **A2：2 个核心，3.5 GB RAM，135 GB 临时存储** |
+    | 类型 | （仅限 OS） |
+    | 层 | **Standard** |  
+    | 实例 | A2：**2 个核心，3.5 GB RAM，135 GB 临时存储** |
 
-   ![此屏幕截图显示了 Azure 定价计算器估算网页中的 VM 配置区域。突出显示的用户输入的 VM 配置属性值的示例指出了如何在 Azure 定价计算器估算中指定 VM 配置。](../images/1902.png)
+   ![Screenshot of the vm configuration area within the Azure pricing calculator estimate webpage. The highlighted examples of user inputted vm configuration property values indicate how to specify a vm configuration within an Azure pricing calculator estimate.](../images/1902.png)
 
-    **备注**：VM 实例规范和定价可能与此示例中的不同。通过选择与示例尽可能匹配的实例来完成本演示。要查看有关不同 VM 产品选项的详细信息，请在右侧 **“更多信息”** 菜单中选择 **“产品详细信息”**。
+    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The VM instance specifications and pricing may differ from those in this example. Follow this walkthrough by choosing an instance that matches the example as closely as possible. To view details about the different VM product options, choose <bpt id="p1">**</bpt>Product details<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>More info<ept id="p2">**</ept> menu on the right.
 
-5. 设置 **“计费选项”** 为 **“即用即付”**。
+5. 设置“计费选项”为“即用即付” 。
 
-   ![此屏幕截图显示了 Azure 定价计算器估算网页中的 VM 计费选项区域。突出显示的“即用即付”计费选项指出了如何在 Azure 定价计算器估算中指定 VM 计费选项。](../images/1903.png)
+   ![Screenshot of the vm billing options area within the Azure pricing calculator estimate webpage. The highlighted pay as you go billing option indicates how to specify a billing option for a vm within an Azure pricing calculator estimate.](../images/1903.png)
 
-6. 在 Azure 中，一个月定义为 730 小时。如果你的 VM 需达到每月 100％ 的时间可用，请将每月小时数值设置为 `730`。本演练示例要求一个 VM 每月 50％ 的时间可用。
+6. **注意**：为创建 Azure 定价计算器估算，本演示提供了 VM 和相关资源的示例配置。
 
     将 VM 的数量设置为 `1`，并将每月小时数值更改为 `365`。
 
-   ![此屏幕截图显示了 Azure 定价计算器估算网页中的 VM 计费选项区域。突出显示的 VM 实例数和每月小时数选项指出了如何在 Azure 定价计算器估算中指定 VM 的实例数和每月小时数。](../images/1904.png)
+   ![使用此示例配置或在 Azure 定价计算器中提供有关你实际资源要求的详细信息。](../images/1904.png)
 
-7. 在 **“托管的 OS 磁盘”** 窗格中，修改默认的 VM 存储配置。
+7. 在“托管的 OS 磁盘”窗格中，修改默认的 VM 存储配置。
 
-    | 层 | 磁盘大小 | 磁盘数量 | 快照 | 存储事务 |
+    | 层 | 磁盘大小 | 磁盘数目 | 快照 | 存储事务 |
     | ---- | --------- | --------------- | -------- | -------------------- |
-    | 标准 HDD | S30：1024 GiB | 1 | 关闭 | 10,000 |
+    | 标准 HDD | S30：1024 GiB | 1 | 关 | 10,000 |
 
-   ![此屏幕截图显示了 Azure 定价计算器估算网页中的托管 OS 磁盘选项区域。突出显示的层类型、磁盘大小、磁盘数和存储事务数、选项指出了如何在 Azure 定价计算器估算中指定 VM 存储配置。](../images/1905.png)
+   ![Screenshot of the managed OS Disks options area within the Azure pricing calculator estimate webpage. The highlighted tier type, disk size, number of disks, and number of storage transactions, options indicate how to specify a storage configuration for a vm within an Azure pricing calculator estimate.](../images/1905.png)
 
-8. 要为估算添加网络带宽，请前往 “Azure 定价计算器”网页顶部。在左侧“产品”菜单中单击 **“网络”**，然后单击 **“带宽”** 磁贴。在 **“已添加带宽”** 消息对话框中，单击 **“查看”**。
+8. To add networking bandwidth to your estimate, go to the top of the Azure Pricing Calculator webpage. Click <bpt id="p1">**</bpt>Networking<ept id="p1">**</ept> in the product menu on the left, then click the <bpt id="p2">**</bpt>Bandwidth<ept id="p2">**</ept> tile. In the <bpt id="p1">**</bpt>Bandwidth added<ept id="p1">**</ept> message dialog, click <bpt id="p2">**</bpt>View<ept id="p2">**</ept>.
 
-   ![此屏幕截图显示了 Azure 定价计算器网页中的网络产品区域。突出显示的网络、添加和查看带宽、磁贴指出了如何在 Azure 定价计算器估算中添加和查看网络带宽配置的详细信息。](../images/1906.png)
+   ![Screenshot of the networking products area within the Azure pricing calculator webpage. The highlighted networking, add bandwidth, and view bandwidth, tiles indicate how to add and view details of a networking bandwidth configuration in an Azure pricing calculator estimate.](../images/1906.png)
 
-9. 添加 VM 带宽配置名称。本演示示例使用名称 **“带宽: Windows VM”**。通过添加以下详细信息来修改默认带宽配置。
+9. 将“你的估算”和“虚拟机”文本替换为 Azure 定价计算器估算和 VM 配置的更具描述性的名称 。
 
     | 区域 | 区域 1 出站数据传输量 |
     | ------ | -------------------------------------- |
     | 北欧 | 50 GB |
 
-   ![此屏幕截图显示了 Azure 定价计算器估算网页中的网络带宽配置区域。突出显示的用户输入的带宽属性值的示例指出了如何在 Azure 定价计算器估算中指定 VM 带宽配置。](../images/1907.png)
+   ![本演示示例使用“我的定价计算器估算”进行估算，Windows VM 进行 VM 配置。](../images/1907.png)
 
-10. 若要添加“应用程序网关”，请返回“Azure 定价计算器”网页的顶部。在 **“网络”** 产品菜单中，单击 **“应用程序网关”** 磁贴。在 **“应用程序网关”** 消息对话框中，单击 **“查看”**。
+10. To add an Application Gateway, return to the top of the Azure Pricing Calculator webpage. In the <bpt id="p1">**</bpt>Networking<ept id="p1">**</ept> product menu, click the <bpt id="p2">**</bpt>Application Gateway<ept id="p2">**</ept> tile. In the <bpt id="p1">**</bpt>Application Gateway<ept id="p1">**</ept> message dialog, click <bpt id="p2">**</bpt>View<ept id="p2">**</ept>.
 
-    ![此屏幕截图显示了 Azure 定价计算器网页中的网络产品区域。突出显示的网络、添加应用程序网关和查看应用程序网关、磁贴指出了如何在 Azure 定价计算器估算中添加和查看应用程序网关配置的详细信息。](../images/1908.png)
+    ![此屏幕截图显示了 Azure 定价计算器估算网页中的 VM 配置区域。](../images/1908.png)
 
-11. 添加应用程序网关配置名称。本演示使用名称 **“应用程序网关: Windows VM”**。通过添加以下详细信息来修改默认应用程序网关配置。
+11. 突出显示的估算名称和 VM 配置名称指出了如何将估算名称和 VM 配置名称添加到 Azure 定价计算器估算中。
 
     | 设置 | 值 |
     | -- | -- |
     | 区域 | **北欧** |
     | 层 | **基本** |
-    | 大小 | **小** |
-    | 实例 | **1** |  
-    | 小时 | **365** |
-    | 已处理数据 | **50 GB** |
+    | 大小 | **小型** |
+    | 实例数 | **1** |  
+    | 小时 |               365 |
+    | 已处理的数据 | **50 GB** |
     | 区域 1：北美，欧洲 | **50 GB**|
 
     ![此屏幕截图显示了 Azure 定价计算器估算网页中的应用程序网关配置区域。](../images/1909.png)
 
 
-# 任务 2：查看定价估算
+# <a name="task-2-review-the-pricing-estimate"></a>任务 2：查看定价估算
 
 在此任务中，我们将查看 Azure 定价计算器的结果。 
 
-1. 滚动到 Azure 定价计算器网页底部，查看 **“每月估算成本”**。
+1. 滚动到 Azure 定价计算器网页底部，查看“每月估算成本”。
 
-    **备注**：浏览 Azure 定价计算器中提供的各种选项。例如，本次演示要求你将货币更新为欧元。
+    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Explore the various options available within the Azure Pricing Calculator. For example, this walkthrough requires you to update the currency to Euro.
 
-2. 将货币更改为欧元，然后选择 **“导出”** 以下载 Microsoft Excel (`.xlsx`) 格式的估算副本，以供离线查看。
+2. 将货币更改为欧元，然后选择“导出”以下载 Microsoft Excel (`.xlsx`) 格式的估算副本，以供离线查看。
 
-    ![此屏幕截图显示了 Azure 定价计算器估算网页中的每月估算总成本。突出显示的欧元货币选项指示如何修改 Azure 定价计算器估算中使用的货币。突出显示的导出选项说明了如何下载估算副本以供离线查看。](../images/1910.png)
+    ![Screenshot of the total estimated monthly costs within the Azure pricing calculator estimate webpage. The highlighted euro currency option indicates how to modify the currency used in an Azure pricing calculator estimate. The highlighted export option illustrates how to download a copy of an estimate for offline viewing.](../images/1910.png)
 
     ![此屏幕截图显示了 Microsoft Excel 中的示例 Azure 定价计算器估算。](../images/1911.png)
 
-恭喜！你从 Azure 定价计算器下载了估算。
+Congratulations! You downloaded an estimate from the Azure Pricing Calculator.

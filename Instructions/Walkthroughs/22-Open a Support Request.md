@@ -1,58 +1,58 @@
 ---
 wts:
-    title: '22 - 创建支持请求（5 分钟）'
-    module: '目前未在当前考试中使用'
+  title: 22 - 创建支持请求（5 分钟）
+  module: Not currently utilized in current exam
 ---
-# 22 - 创建支持请求（5 分钟）
+# <a name="22---open-a-support-request-5-min"></a>22 - 创建支持请求（5 分钟）
 
 在本演练中，我们将查看可用的支持计划选项，然后练习创建和监视新的支持请求。
 
-# 任务 1：查看可用的支持计划选项和技术支持请求
+# <a name="task-1-view-available-support-plan-options-and-a-technical-support-request"></a>任务 1：查看可用的支持计划选项和技术支持请求
 
 1. 登录到 [**Azure 门户**](https://portal.azure.com)。
 
-2. 在 **“所有服务”** 边栏选项卡中，搜索并选择 **“帮助 + 支持”**，然后选择 **“支持计划”**。
+2. 在“所有服务”边栏选项卡中，搜索并选择“帮助 + 支持”，然后选择“支持计划”。
 
-3. 花几分钟时间查看不同的支持计划。请注意包括在 **“基本”** 计划中的内容。 
+3. Take a few minutes to review the different support plans. Notice what is included in the <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> plan. 
 
-4. 单击 **“+ 新建支持请求”**。随即将根据你指定的值创建票证。 
+4. Click <bpt id="p1">**</bpt>+ New support request<ept id="p1">**</ept>. The ticket is created based on the values you specify. 
 
-    | 设置 | 值|
+    | 设置 | Value|
     |----|--------|
     | 问题类型| **技术** |
-    | 订阅 | **选择你的订阅** |
-    | 服务 | **所有服务**、**运行 Linux 的虚拟机** |
-    | 摘要 | **对于大型文件，磁盘访问非常慢**。 |
-    | 问题类型 | **VM 性能** |
+    | 订阅 | **选择自己的订阅** |
+    | 服务 | 所有服务、运行 Linux 的虚拟机  |
+    | 总结 | 对于大型文件，磁盘访问非常慢 |
+    | 问题类型 | VM 性能 |
     | 问题子类型 | **磁盘吞吐量低于预期** |    
     | | |
 
-5. 单击 **“下一步: 解决方案>>”** 并通读推荐的解决方案。
+5. 单击“下一步:**解决方案 >>”** 并通读推荐的解决方案。
 
-6. 单击 **“下一步: 详细信息>>”**。提交实际的支持请求时，你需要提供尽可能多的信息，以便快速解决问题。本页面上的联系方式选项取决于你的支持计划。 
+6. Click <bpt id="p1">**</bpt>Next: Details &gt;&gt;<ept id="p1">**</ept>. When submitting an actual support request, you would provide as much information as possible to allow for a speedy resolution of the issue. Your contact choices on this page depend on your support plan. 
 
-    **备注:** 我们将在此时停止。你是否了解如何提交技术请求？
+    <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We will stop at this point. Do you understand how to submit a technical request?
 
-# 任务 2：创建计费支持请求
+# <a name="task-2-create-a-billing-support-request"></a>任务 2：创建计费支持请求
 
-1. 返回到 **“新建支持请求”** 部分和 **“基本信息”** 选项卡。 
+1. 返回到“新建支持请求”部分和“基本信息”选项卡。 
 
-    | 设置 | 值|
+    | 设置 | Value|
     |----|--------|
-    | 问题类型| **计费** |
-    | 订阅 | **选择你的订阅** |
-    | 摘要 | **每月收费不正确** |
+    | 问题类型| **Billing** |
+    | 订阅 | **选择自己的订阅** |
+    | 总结 | 每月收费不正确 |
     | 问题类型 | **定价** |
-    | 问题子类型 | **帮助我发现服务价格** |    
+    | 问题子类型 | 帮助我发现服务价格 |    
 
-2. 单击 **“下一步: 解决方案”** 并通读推荐的解决方案。
+2. 单击“下一步:解决方案”并通读推荐的解决方案。
 
-3. 单击 **“下一步: 详细信息”**。  提交真实的支持请求时，你需要提供尽可能多的信息，以便快速解决问题。 
+3. Click <bpt id="p1">**</bpt>Next: Details<ept id="p1">**</ept>.  When submitting a real support request you would provide as much information as possible to allow for a speedy resolution of the issue. 
 
-    **备注:** 我们将在此时停止。你是否了解如何提交支持请求？
+    <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We will STOP at this point. Do you understand how to submit a support request?
 
-4. 单击 **“所有支持请求”**。这是显示支持请求的地方。还会向你的电子邮件地址发送一封电子邮件，其中包含支持请求的详细信息。
+4. Click <bpt id="p1">**</bpt>All support requests<ept id="p1">**</ept>. This is where your support requests are shown. An email is also sent to your email address containing details of the support request.
 
-恭喜！你已查看了可用的支持计划选项，并练习了创建和监视新的支持请求。
+花几分钟时间查看不同的支持计划。
 
-**备注**：单击以了解有关[**创建 Azure 支持票证**](https://azure.microsoft.com/zh-cn/support/create-ticket)的详细信息。
+**注意**：单击此处了解有关[创建 Azure 支持票证](https://azure.microsoft.com/en-us/support/create-ticket)的详细信息。
