@@ -33,7 +33,7 @@ In this walkthrough we create, configure, and deploy a container by using Azure 
 
 4. Configure the Networking tab (replace <bpt id="p1">**</bpt>xxxxx<ept id="p1">**</ept> with letters and digits such that the name is globally unique). Leave all other settings at their default values.
 
-    | 设置| Value|
+    | 设置| 值|
     |--|--|
     | DNS 名称标签| mycontainerdnsxxxxx |
 
