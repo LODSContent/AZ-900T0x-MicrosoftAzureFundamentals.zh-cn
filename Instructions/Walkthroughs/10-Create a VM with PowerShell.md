@@ -34,7 +34,7 @@ wts:
 
 1. 确保在“Cloud Shell”窗格左上方的下拉菜单中选中“PowerShell”。
 
-2. Verify your new resource group by running the following command in the Powershell window. Press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept> to run the command.
+2. 在 Powershell 窗口中运行以下命令，验证新资源组。 按 Enter 运行该命令。
 
     ```PowerShell
     Get-AzResourceGroup | Format-Table
@@ -57,7 +57,7 @@ wts:
 
 5. 创建 VM 后，关闭 Cloud Shell 窗格的 PowerShell 会话。
 
-6. In the Azure portal, search for <bpt id="p1">**</bpt>Virtual machines<ept id="p1">**</ept> and verify the <bpt id="p2">**</bpt>myVMPS<ept id="p2">**</ept> is running. This may take a few minutes.
+6. 在 Azure 门户中，搜索“虚拟机”并验证 myVMPS 是否正在运行 。 这可能需要几分钟的时间。
 
     ![此屏幕截图显示了“虚拟机”页面，其中 myVMPS 处于正在运行的状态。](../images/1001.png)
 
@@ -71,7 +71,7 @@ wts:
 
 2. 确保在“Cloud Shell”窗格左上方的下拉菜单中选中“PowerShell”。
 
-3. Retrieve information about your virtual machine including name, resource group, location, and status. Notice the PowerState is <bpt id="p1">**</bpt>running<ept id="p1">**</ept>.
+3. 检索有关你的虚拟机的信息，包括名称、资源组、位置和状态。 注意 PowerState 为“正在运行”。
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
@@ -82,9 +82,9 @@ wts:
     ```PowerShell
     Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
     ```
-5. When prompted confirm (Yes) to the action. Wait for <bpt id="p1">**</bpt>Succeeded<ept id="p1">**</ept> status.
+5. 出现提示时，确认（选择“是”）操作。 等待至显示“成功”状态。
 
-6. Verify your virtual machine state. The PowerState should now be <bpt id="p1">**</bpt>deallocated<ept id="p1">**</ept>. You can also verify the virtual machine status in the portal. Close Cloudshell.
+6. 验证你的虚拟机状态。 PowerState 现在应为“解除分配”。 你还可以在门户中验证虚拟机状态。 关闭 Cloudshell。
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
@@ -98,7 +98,7 @@ wts:
 
 1. 从“所有服务”边栏选项卡，搜索并选择“顾问” 。 
 
-2. On the <bpt id="p1">**</bpt>Advisor<ept id="p1">**</ept> blade, select <bpt id="p2">**</bpt>Overview<ept id="p2">**</ept>. Notice recommendations are grouped by Reliability, Security, Performance, and Cost. 
+2. 在“顾问”边栏选项卡中，选择“概述”。 请注意，按可靠性、安全性、性能和成本对建议进行分组。 
 
     ![顾问“概述”页面的屏幕截图。 ](../images/1003.png)
 
@@ -114,6 +114,6 @@ wts:
 
 6. 如有时间，请继续尝试使用 Azure PowerShell。 
 
-Congratulations! You have configured Cloud Shell, created a virtual machine using PowerShell, practiced with PowerShell commands, and viewed Advisor recommendations.
+恭喜！ 你已配置了 Cloud Shell，使用 PowerShell 创建了虚拟机，使用 PowerShell 命令进行了练习，并查看了顾问建议。
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。

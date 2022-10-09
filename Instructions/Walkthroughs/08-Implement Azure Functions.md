@@ -33,7 +33,7 @@ wts:
 
 5. 等待说明已创建资源的通知出现。
 
-6. When the deployment has completed, click Go to resource from the deployment blade. Alternatively, navigate back to the <bpt id="p1">**</bpt>Function App<ept id="p1">**</ept> blade, click <bpt id="p2">**</bpt>Refresh<ept id="p2">**</ept> and verify that the newly created function app has the <bpt id="p3">**</bpt>Running<ept id="p3">**</ept> status. 
+6. 部署完成后，在“部署”边栏选项卡上单击“转到资源”。 此外，导航回“函数应用”边栏选项卡，单击“刷新”并验证新创建的函数应用是否具有“正在运行”状态  。 
 
     ![带有新函数应用的“函数应用”页面的屏幕截图。](../images/0701.png)
 
@@ -45,25 +45,25 @@ wts:
 
 2. 在“函数应用”边栏选项卡的“函数”部分，单击“函数”，然后单击“+ 添加、+ 创建、+ 新建”  。
 
-    ![Screenshot of the choose a development environment step in the azure functions for dot net getting started pane inside Azure portal. The display elements for creating a new in-portal function are highlighted. The highlighted elements are expand the function app, add new function, in-portal, and the continue button.](../images/0702.png)
+    ![此屏幕截图显示了如何在 Azure 门户中为“dot net 入门”窗格在 Azure Functions 中选择开发环境这一步骤。 突出显示用于新建门户内函数的显示元素。 突出显示元素为：展开函数应用、添加新函数、门户内和继续按钮。](../images/0702.png)
 
-3. An <bpt id="p1">**</bpt>Add function<ept id="p1">**</ept> pop-up window will appear on the right. In the <bpt id="p1">**</bpt>Select a template<ept id="p1">**</ept> section click <bpt id="p2">**</bpt>HTTP trigger<ept id="p2">**</ept>. Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> 
+3. 右侧将显示“添加函数”弹出窗口。 在“选择模板”部分中，单击“HTTP 触发器” 。 单击“添加” 
 
-    ![Screenshot of the create a function step in the azure functions for dot net getting started pane inside Azure portal. The HTTP trigger card is highlighted to illustrate the display elements used to add a new webhook to an Azure function.](../images/0702a.png)
+    ![此屏幕截图显示了如何在 Azure 门户中为“dot net 入门”窗格在 Azure Functions 中创建函数这一步骤。 突出显示“HTTP 触发器”卡，以说明用于向 Azure 函数添加新 Webhook 的显示元素。](../images/0702a.png)
 
 4. 在 HttpTrigger1 边栏选项卡的“开发人员”部分，单击“编码 + 测试”。 
 
-5. On the <bpt id="p1">**</bpt>Code + Test<ept id="p1">**</ept> blade, review the auto-generated code and note that the code is designed to run an HTTP request and log information. Also, notice the function returns a Hello message with a name. 
+5. 在“编码 + 测试”边栏选项卡上，查看自动生成的代码，并注意该代码旨在运行 HTTP 请求和日志信息。 另请注意，该函数将返回包含名称的 Hello 消息。 
 
-    ![Screenshot of the function code. The Hello message is hightlighted.](../images/0704.png)
+    ![函数代码的屏幕截图。 突出显示 Hello 消息。](../images/0704.png)
 
 6. 在函数编辑器顶部单击“获取函数 URL”。 
 
 7. 请确保“密钥”下拉列表中的值设置为默认值，并单击“复制”以复制函数 URL  。 
 
-    ![Screenshot of the get function URL pane inside the function editor in Azure portal. The display elements get function URL button, set key dropdown, and copy URL button are highlighted to indicate how to obtain and copy the function URL from the function editor.](../images/0705.png)
+    ![此屏幕截图显示了 Azure 门户中函数编辑器内的“获取函数 URL”窗格。 突出显示显示元素获取函数 URL 按钮、设置键下拉列表和复制 URL 按钮，以指示如何从函数编辑器中获取和复制函数 URL。](../images/0705.png)
 
-8. Open a new browser tab and paste the copied function URL into your web browser's address bar. When the page is requested the function will run. Notice the returned message stating that the function requires a name in the request body.
+8. 打开一个新的浏览器选项卡，并将复制的函数 URL 粘贴到 Web 浏览器的地址栏中。 当请求该页面时，该函数将运行。 请注意，返回的消息会指出函数需要请求正文中的名称。
 
     ![“请提供一个名称”这一消息的屏幕截图。](../images/0706.png)
 
@@ -71,12 +71,12 @@ wts:
 
     **注意**：例如，如果你的名字是 Cindy，最终 URL 将与以下所示类似：`https://azfuncxxx.azurewebsites.net/api/HttpTrigger1?code=X9xx9999xXXXXX9x9xxxXX==&name=cindy`
 
-    ![Screenshot of a highlighted function URL and an appended example user name in the address bar of a web browser. The hello message and user name are also highlighted to illustrate the output of the function in the main browser window.](../images/0707.png)
+    ![此屏幕截图显示了 Web 浏览器的地址栏中突出显示的函数 URL 和附加的示例用户名。 此外，突出显示 hello 消息和用户名，以说明主浏览器窗口中函数的输出。](../images/0707.png)
 
-10. When you hit enter, your function runs and every invocation is traced. To view the traces, return to the Portal <bpt id="p1">**</bpt>HttpTrigger1 <ph id="ph1">\|</ph> Code + Test<ept id="p1">**</ept> blade and click <bpt id="p2">**</bpt>Monitor<ept id="p2">**</ept>. You can <bpt id="p1">**</bpt>configure<ept id="p1">**</ept> Application Insights by selecting the timestamp and click <bpt id="p2">**</bpt>Run query in Application Insights<ept id="p2">**</ept>.
+10. 按 Enter 键后，函数将运行并跟踪每个调用。 若要查看跟踪，请返回到门户“HttpTrigger1 \| 代码 + 测试”边栏选项卡，并单击“监视”。 可以通过选择时间戳来配置 Application Insights，然后单击“在 Application Insights 中运行查询”。
 
     ![此屏幕截图显示了在 Azure 门户的函数编辑器中运行函数所产生的跟踪信息日志。](../images/0709.png) 
 
-Congratulations! You have created a Function App to display a Hello message when there is an HTTP request.  
+恭喜！ 你已创建一个函数应用，当出现 HTTP 请求时，它会显示 Hello 消息。  
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。

@@ -8,7 +8,7 @@ wts:
 
 在本演练中，你将使用总拥有成本 (TCO) 计算器来生成本地环境的成本比较报告。
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: This walkthrough provides example definitions of on-premises infrastructure and workloads for a typical datacenter. To create a TCO Calculator report, use the example definitions or provide details of your <bpt id="p1">*</bpt>actual<ept id="p1">*</ept> on-premises infrastructure and workloads.
+**注意**：本演练提供了典型数据中心的本地基础结构和工作负载的示例定义。 要创建 TCO 计算器报告，请使用示例定义或提供你的实际本地基础结构和工作负载的详细信息。
 
 # <a name="task-1-configure-the-tco-calculator"></a>任务 1：配置 TCO 计算器
 
@@ -88,6 +88,6 @@ wts:
 
 3. 要保存或打印报告的 PDF 副本，请单击“下载”。
 
-    ![Screenshot of the report pane of the tco calculator in Azure. The highlighted and completed input fields indicates how set the tco calculator timeframe to three years and the region to north europe. A graph shows the cost of on-premises infrastructure and workloads off-set against the reduced cost of using Azure.](../images/2001.png)
+    ![此屏幕截图显示了 Azure 中 tco 计算器的“报告”窗格。 突出显示和已完成的输入字段指示如何将 tco 计算器时间范围设置为三年以及将该区域设置为北欧。 此图表显示了本地基础结构和工作负载的成本与使用 Azure 所降低成本的差值。](../images/2001.png)
 
-Congratulations! You have used the TCO Calculator to generate a cost comparison report for an on-premises environment.
+恭喜！ 你已使用 TCO 计算器生成本地环境的成本比较报告。

@@ -27,7 +27,7 @@ wts:
     | 区域 | **（美国）美国东部** |
     
    
-4. Click the <bpt id="p1">**</bpt>Review + create<ept id="p1">**</ept> button. Ensure the validation passes. Then hit create to deploy the resource.
+4. 单击“审阅 + 创建”按钮。 确保验证通过。 然后点击“创建”来部署资源。
 
 
 # <a name="task-2-create-two-virtual-machines"></a>任务 2：创建两个虚拟机
@@ -51,13 +51,13 @@ wts:
    | 选定的入站端口| **RDP (3389)** |
    
 
-3. Select the <bpt id="p1">**</bpt>Networking<ept id="p1">**</ept> tab. Make sure the virtual machine is placed in the <bpt id="p2">**</bpt>vnet1<ept id="p2">**</ept> virtual network. Review the default settings, but do not make any other changes. 
+3. 选择“网络”选项卡。确保虚拟机位于 vnet1 虚拟网络中。 查看默认设置，但不要进行任何其他更改。 
 
-4. Click <bpt id="p1">**</bpt>Review + create<ept id="p1">**</ept>. After the Validation passes, click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>. Deployment times can vary but it can generally take between three to six minutes to deploy.
+4. 单击“查看 + 创建”。 验证通过后，单击“创建”。 部署时间可能有所不同，通常需要三到六分钟才能完成部署。
 
 5. 监视你的部署，同时继续执行下一步。 
 
-6. Create a second virtual machine by repeating steps <bpt id="p1">**</bpt>2 to 4<ept id="p1">**</ept> above. Make sure you use a different virtual machine name, that the virtual machine is in the same virtual network, and is using a new public IP address:
+6. 通过重复上述步骤 2 至 4 创建第二个虚拟机。 请务必使用其他虚拟机名称，并确保该虚拟机位于同一虚拟网络中，并且使用新的公共 IP 地址：
 
     | 设置 | 值 |
     | --- | --- |
@@ -70,9 +70,9 @@ wts:
 
 # <a name="task-3-test-the-connection"></a>任务 3：测试连接 
 
-In this task, we will try to test whether the virtual machines can communicate (ping) each other. If not we will install a rule to allow an ICMP connection. Usually ICMP connections are automatically blocked.
+在此任务中，我们将尝试测试虚拟机能否相互通信 (ping)。 如果不能，则安装一个支持 ICMP 连接的规则。 通常，系统会自动阻止 ICMP 连接。
 
-1. From the <bpt id="p1">**</bpt>All resources<ept id="p1">**</ept> blade, search for <bpt id="p2">**</bpt>vm1<ept id="p2">**</ept>, open its <bpt id="p3">**</bpt>Overview<ept id="p3">**</ept> blade, and make sure its <bpt id="p4">**</bpt>Status<ept id="p4">**</ept> is <bpt id="p5">**</bpt>Running<ept id="p5">**</ept>. You may need to <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> the page.
+1. 从“所有资源”边栏选项卡，搜索“vm1”，打开其“概述”边栏选项卡，并确保其“状态”为“正在运行”    。 可能需要刷新页面。
 
 2. 在“概述”边栏选项卡上，选择“连接”并选择下拉列表中的“RDP”  。
 
@@ -84,7 +84,7 @@ In this task, we will try to test whether the virtual machines can communicate (
 
 5. 在“Windows 安全性”窗口中，键入用户名“azureuser”和密码“Pa$$w0rd1234”，然后单击“确定”   。
 
-6. You may receive a certificate warning during the sign-in process. Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to create the connection and connect to your deployed VM. You should connect successfully. Close the Windows Server and Dashboard windows that pop up. You should see a Blue Windows background. You are now in your virtual machine.
+6. 你可能会在登录过程中收到证书警告。 单击“是”创建连接并连接到已部署的 VM。 你应该成功连接。 关闭弹出的 Windows Server 和仪表板窗口。 此时会显示蓝色的 Windows 背景。 你现在已进入虚拟机。
 
 7. 在两个新创建的虚拟机中，通过 RDP 进行连接，然后通过打开“开始”菜单>“设置”>“网络和 Internet”>“查找 Windows 防火墙”，禁用公共和专用防火墙。
 
@@ -96,9 +96,9 @@ In this task, we will try to test whether the virtual machines can communicate (
    ping vm2
    ```
 
- 10. You should be successful. You have pinged VM2 from VM1.
+ 10. 操作应该会成功。 现已从 VM1 ping 通 VM2。
 
 
-<bpt id="p1">**</bpt>Congratulations!<ept id="p1">**</ept> You have configured and deployed two virtual machines in a virtual network, and then you were able to connect them.
+祝贺你！ 你已在虚拟网络中配置并部署了两个虚拟机，现在可以连接它们了。
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。

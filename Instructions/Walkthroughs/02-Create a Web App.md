@@ -5,9 +5,9 @@ wts:
 ---
 # <a name="02---create-a-web-app-10-min"></a>02 - 创建 Web 应用（10 分钟）
 
-In this walkthrough, we will create a web app that runs a Docker container. The Docker container contains a Welcome message. 
+在本演练中，我们将创建一个运行 Docker 容器的 Web 应用。 Docker 容器包含一条“欢迎”消息。 
 
-Azure App Service are actually a collection of four services, all of which are built to help you host and run web applications. The four services (Web Apps, Mobile Apps, API Apps, and Logic Apps) look different, but in the end they all operate in very similar ways. Web Apps are the most commonly used of the four services, and this is the service that we will be using in this lab.
+Azure 应用服务实际上是四种服务的集合，所有这些服务都旨在帮助你托管和运行 Web 应用程序。 这四种服务（Web 应用、移动应用、API 应用和逻辑应用）看起来有所不同，但最终都以非常类似的方式运行。 Web 应用是这四种服务中最为常用的服务，并且是我们在本实验室中将要使用的服务。
 
 # <a name="task-1-create-a-web-app"></a>任务 1：创建 Web 应用 
 
@@ -17,7 +17,7 @@ Azure App Service are actually a collection of four services, all of which are b
 
 2. 在“所有服务”边栏选项卡上，搜索并选择“应用服务”，然后单击“+ 添加、+ 创建、+ 新建”  
 
-3. On the <bpt id="p1">**</bpt>Basics<ept id="p1">**</ept> tab of the <bpt id="p2">**</bpt>Web App<ept id="p2">**</ept> blade, specify the following settings (replace <bpt id="p3">**</bpt>xxxx<ept id="p3">**</ept> in the name of the web app with letters and digits such that the name is globally unique). Leave the defaults for everything else, including the App Service Plan. 
+3. 在“Web 应用”边栏选项卡的“基本”选项卡上，指定以下设置（用字母和数字替换 Web 应用名称中的“xxxx”，使得该名称具有全局唯一性）  。 保留所有其他设置的默认值，包括应用服务计划。 
 
     | 设置 | 值 |
     | -- | -- |
@@ -51,16 +51,16 @@ Azure App Service are actually a collection of four services, all of which are b
 
 2. 从“通知”中单击“前往资源” 。 
 
-3. 在本演练中，我们将创建一个运行 Docker 容器的 Web 应用。
+3. 在“概述”边栏选项卡上找到“URL” 。 将 URL 复制到剪贴板。
 
-    ![Docker 容器包含一条“欢迎”消息。](../images/0801.png)
+    ![Web 应用“属性”边栏选项卡的屏幕截图。 突出显示 URL。](../images/0801.png)
 
-4. In a new browser window, paste the URl and press enter. The Welcome to Azure Container Instances! welcome message will be displayed.
+4. 在新的浏览器窗口中，粘贴 URL，然后按 Enter。 欢迎使用 Azure 容器实例！ 将显示欢迎消息。
 
     ![“欢迎访问 Azure 容器实例”页面的屏幕截图。](../images/0802.png)
 
-5. Azure 应用服务实际上是四种服务的集合，所有这些服务都旨在帮助你托管和运行 Web 应用程序。 
+5. 切换回 Web 应用的“概述”边栏选项卡并向下滚动。 你将注意到多个跟踪数据输入/输出和请求的图表。 如果重复几次步骤 4，应该能够看到这些图表中显示的相应遥测。 这包括请求数和平均响应时间。 
 
-这四种服务（Web 应用、移动应用、API 应用和逻辑应用）看起来有所不同，但最终都以非常类似的方式运行。
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。
 
 恭喜，你成功创建了一个 Azure 应用服务。

@@ -6,7 +6,7 @@ wts:
 
 # <a name="03---deploy-azure-container-instances-10-min"></a>03 - 部署 Azure 容器实例（10 分钟）
 
-In this walkthrough we create, configure, and deploy a container by using Azure Container Instances (ACI) in the Azure Portal. The container is a Welcome to ACI web application that displays a static HTML page. 
+在本演练中，我们将在 Azure 门户中使用 Azure 容器实例 (ACI) 创建、配置和部署容器。 该容器是显示静态 HTML 页面的“欢迎使用 ACI”Web 应用程序。 
 
 # <a name="task-1-create-a-container-instance"></a>任务 1：创建容器实例 
 
@@ -31,14 +31,14 @@ In this walkthrough we create, configure, and deploy a container by using Azure 
     | 大小| 保留默认值|
 
 
-4. Configure the Networking tab (replace <bpt id="p1">**</bpt>xxxxx<ept id="p1">**</ept> with letters and digits such that the name is globally unique). Leave all other settings at their default values.
+4. 配置“联网”选项卡（将 xxxxx 替换为字母和数字，以使名称在全局范围内唯一）。 保留所有其他设置的默认值。
 
     | 设置| 值|
     |--|--|
     | DNS 名称标签| mycontainerdnsxxxxx |
 
     
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Your container will be publicly reachable at dns-name-label.region.azurecontainer.io. If you receive a <bpt id="p1">**</bpt>DNS name label not available<ept id="p1">**</ept> error message following the deployment, specify a different DNS name label (replacing the xxxxx) and re-deploy. 
+    **注意**：可以在 dns-name-label.region.azurecontainer.io 公开访问你的容器。 如果在部署后收到“DNS 名称标签不可用”的错误消息，请指定其他 DNS 名称标签（替换 xxxxx）并重新部署。 
 
 5. 单击“查看和创建”以启动自动验证流程。
 
@@ -59,11 +59,11 @@ In this walkthrough we create, configure, and deploy a container by using Azure 
 
     ![此屏幕截图显示了 Azure 门户中新创建的容器的“概述”窗格，其中突出显示了 FQDN。 ](../images/0202.png)
 
-2. 在本演练中，我们将在 Azure 门户中使用 Azure 容器实例 (ACI) 创建、配置和部署容器。 
+2. 将容器的 FQDN 复制到新的 Web 浏览器选项卡，然后按 Enter。 将显示“欢迎”页面。 
 
     ![Web 浏览器中显示的 ACI 欢迎消息的屏幕截图。](../images/0203.png)
 
 
-该容器是显示静态 HTML 页面的“欢迎使用 ACI”Web 应用程序。
+祝贺你！ 你已使用 Azure 门户将应用程序成功部署到 Azure 容器实例中的容器。
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。

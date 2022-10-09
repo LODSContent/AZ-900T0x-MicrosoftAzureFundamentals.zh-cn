@@ -15,7 +15,7 @@ wts:
 
 2. 在“所有服务”边栏选项卡中，搜索并选择“资源组”，然后单击“+ 添加 + 新建 + 创建”  。
 
-3. Create a new resource group. Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> when you are finished. 
+3. 创建新的资源组。 完成后，单击“创建”。 
 
     | 设置 | 值 |
     | -- | -- |
@@ -28,11 +28,11 @@ wts:
 
 5. 刷新资源组页面，并单击表示新创建的资源组的条目。
 
-6. Click on the <bpt id="p1">**</bpt>Access control (IAM)<ept id="p1">**</ept> blade, and then switch to the <bpt id="p2">**</bpt>Roles<ept id="p2">**</ept> tab. Scroll through the large number of roles definitions that are available. Use the Informational icons to get an idea of each role's permissions. Notice there is also information on the number of users and groups that are assigned to each role.
+6. 单击“访问控制(IAM)”边栏选项卡，然后切换到“角色”选项卡。滚动浏览大量可用的角色定义。 使用信息图标可了解每个角色的权限。 注意，还有关于分配给每个角色的用户和组的数量的信息。
 7. 
 ![image](https://user-images.githubusercontent.com/89808319/144266949-f19d91ab-31d6-4c8b-af36-c00035925cf0.png)
 
-7. Switch to the <bpt id="p1">**</bpt>Role assignments<ept id="p1">**</ept> tab of the <bpt id="p2">**</bpt>myRGRBAC - Access control (IAM)<ept id="p2">**</ept> blade, click <bpt id="p3">**</bpt>+ Add<ept id="p3">**</ept> and then click <bpt id="p4">**</bpt>Add role assignment<ept id="p4">**</ept>. Search for the Virtual Machine Contributor role and select. Switch to the "Members" tab and Assign access to: User, group, or service principal. Then click + Select members and type in your name to the popup search function and hit 'select.' Then hit 'Review and Assign'
+7. 切换到“myRGRBAC - 访问控制(IAM)”边栏选项卡的“角色分配”选项卡，单击“+ 添加”，然后单击“添加角色分配”   。 搜索并选择“虚拟机参与者”角色。 切换到“成员”选项卡，并将访问权限分配给：用户、组或服务主体。 然后单击“+ 选择成员”，将名称键入到弹出窗口搜索函数并单击“选择”。 然后单击“查看并分配”
 
     
     ![image](https://user-images.githubusercontent.com/89808319/144266255-3a0f8574-9358-4c21-8f95-3503747e77c8.png)
@@ -61,7 +61,7 @@ wts:
 
     **注意**：你知道如何删除角色分配吗？
 
-Congratulations! You created a resource group, assigned an access role to it and viewed activity logs. 
+恭喜！ 你创建了一个资源组，为其分配了一个访问角色，并查看了活动日志。 
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。
 

@@ -40,7 +40,7 @@ wts:
 
 7. 其余值保留默认值，然后单击页面底部的“查看 + 创建”按钮。
 
-8. Once Validation is passed click the <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> button. It can take anywhere from five to seven minutes to deploy the virtual machine.
+8. 验证通过后，单击“创建”按钮。 部署虚拟机大约需要五到七分钟。
 
 9. 你将在部署页面和通过“通知”区域（顶部菜单栏的钟形图标）收到更新。
 
@@ -56,9 +56,9 @@ wts:
 
     ![此屏幕截图显示了虚拟机属性，其中突出显示了“连接”按钮。](../images/0101.png)
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The following directions tell you how to connect to your VM from a Windows computer. On a Mac, you need an RDP client such as this Remote Desktop Client from the Mac App Store and on a Linux computer you can use an open source RDP client.
+    **注意**：以下说明介绍如何从 Windows 计算机连接到 VM。 在 Mac 上，需要 RDP 客户端（例如 Mac App Store 中的此远程桌面客户端），而在 Linux 计算机上，可以使用开放源代码 RDP 客户端。
 
-2. On the <bpt id="p1">**</bpt>Connect to virtual machine<ept id="p1">**</ept> page, keep the default options to connect with the public IP address over port 3389 and click <bpt id="p2">**</bpt>Download RDP File<ept id="p2">**</ept>. A file will download on the bottom left of your screen.
+2. 在“连接虚拟机”界面，保持默认选项，以便通过端口 3389 使用公共 IP 地址进行连接，然后单击“下载 RDP 文件” 。 此时屏幕左下角将下载一个文件。
 
 3. 打开下载的 RDP 文件（位于实验室计算机的左下角）并在出现提示时单击“连接” 。 
 
@@ -66,11 +66,11 @@ wts:
 
 4. 在“Windows 安全中心”窗口中，使用创建 VM azureuser 时使用的管理员凭据和密码 Pa$$w0rd1234 登录  。 
 
-5. You may receive a warning certificate during the sign-in process. Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> or to create the connection and connect to your deployed VM. You should connect successfully.
+5. 在登录过程中，你可能会收到警告证书。 单击“是”或创建连接并连接到已部署的 VM。 你应该成功连接。
 
     ![此屏幕截图显示了“证书警告”对话框，此对话框通知用户存在不受信任的证书，其中突出显示了“是”按钮。 ](../images/0104.png)
 
-A new Virtual Machine (myVM) will launch inside your Lab. Close the Server Manager and dashboard windows that pop up (click "x" at top right). You should see the blue background of your virtual machine. <bpt id="p1">**</bpt>Congratulations!<ept id="p1">**</ept> You have deployed and connected to a Virtual Machine running Windows Server. 
+实验室内将启动一个新的虚拟机 (myVM)。 关闭服务器管理器和弹出的仪表板窗口（单击右上角的“x”）。 此时会看到虚拟机的蓝色背景。 祝贺你！ 你已部署并连接到运行 Windows Server 的虚拟机。 
 
 # <a name="task-3-install-the-web-server-role-and-test"></a>任务 3：安装 Web 服务器角色并进行测试
 
@@ -80,13 +80,13 @@ A new Virtual Machine (myVM) will launch inside your Lab. Close the Server Manag
 
     ![此屏幕截图显示了虚拟机桌面，其中已单击“开始”按钮，并选择了“PowerShell”，且突出显示“以管理员身份运行”。](../images/0105.png)
 
-2. In PowerShell, install the <bpt id="p1">**</bpt>Web-Server<ept id="p1">**</ept> feature on the virtual machine by running the following command. (Paste in the command and hit ENTER for the installment to begin).
+2. 在 PowerShell 中运行以下命令，在虚拟机中安装 Web 服务器功能。 （粘贴命令并按 ENTER 键开始安装）。
 
     ```PowerShell
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
     ```
   
-3. When completed, a prompt will state <bpt id="p1">**</bpt>Success<ept id="p1">**</ept> with a value <bpt id="p2">**</bpt>True<ept id="p2">**</ept>. You do not need to restart the virtual machine to complete the installation. Close the RDP connection to the VM by clicking the <bpt id="p1">**</bpt>x<ept id="p1">**</ept> on the blue bar at the top center of your virtual machine. You can also minimize it by clicking the <bpt id="p1">**</bpt><ph id="ph1">-</ph><ept id="p1">**</ept> on the blue bar at the top center.
+3. 完成后会看到一个值为“True”的提示符，指示“成功” 。 你无需重启虚拟机即可完成安装。 单击虚拟机顶部中心蓝色栏上的“x”，关闭与 VM 的 RDP 连接。 还可以单击顶部中心蓝色栏上的“-”将其最小化。
 
     ![此屏幕截图显示了 Windows PowerShell 命令提示符，其中命令 Install-WindowsFeature -name Web-Server -IncludeManagementTools 已成功完成，并且输出声明了这一点。](../images/0106.png)
 
@@ -98,7 +98,7 @@ A new Virtual Machine (myVM) will launch inside your Lab. Close the Server Manag
 
     ![此屏幕截图显示了通过 Web 浏览器中的公共 IP 地址访问的默认 IIS Web 服务器欢迎页面。](../images/0108.png)
 
-<bpt id="p1">**</bpt>Congratulations!<ept id="p1">**</ept> You have created a new VM running a web server that is accessible via its public IP address. If you had a web application to host, you could deploy application files to the virtual machine and host them for public access on the deployed virtual machine.
+祝贺你！ 你已创建了一个运行 Web 服务器的新 VM，可通过其公共 IP 地址对其进行访问。 如果你有一个要托管的 Web 应用程序，则可以将这些应用程序文件部署到虚拟机并进行托管，以便在已部署的虚拟机上进行公共访问。
 
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see verify that the deletion completed successfully. 
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 监视“通知”以查看删除是否成功完成。 

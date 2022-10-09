@@ -13,9 +13,9 @@ wts:
 
 2. 在“所有服务”边栏选项卡中，搜索并选择“帮助 + 支持”，然后选择“支持计划”。
 
-3. Take a few minutes to review the different support plans. Notice what is included in the <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> plan. 
+3. 花几分钟时间查看不同的支持计划。 请注意包括在“基本”计划中的内容。 
 
-4. Click <bpt id="p1">**</bpt>+ New support request<ept id="p1">**</ept>. The ticket is created based on the values you specify. 
+4. 单击“+ 新建支持请求”。 随即将根据你指定的值创建票证。 
 
     | 设置 | Value|
     |----|--------|
@@ -29,9 +29,9 @@ wts:
 
 5. 单击“下一步:**解决方案 >>”** 并通读推荐的解决方案。
 
-6. Click <bpt id="p1">**</bpt>Next: Details &gt;&gt;<ept id="p1">**</ept>. When submitting an actual support request, you would provide as much information as possible to allow for a speedy resolution of the issue. Your contact choices on this page depend on your support plan. 
+6. 单击“下一步:**详细信息 >>”** 。 提交实际的支持请求时，你需要提供尽可能多的信息，以便快速解决问题。 本页面上的联系方式选项取决于你的支持计划。 
 
-    <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We will stop at this point. Do you understand how to submit a technical request?
+    **注意：** 我们将在此时停止。 你是否了解如何提交技术请求？
 
 # <a name="task-2-create-a-billing-support-request"></a>任务 2：创建计费支持请求
 
@@ -47,12 +47,12 @@ wts:
 
 2. 单击“下一步:解决方案”并通读推荐的解决方案。
 
-3. Click <bpt id="p1">**</bpt>Next: Details<ept id="p1">**</ept>.  When submitting a real support request you would provide as much information as possible to allow for a speedy resolution of the issue. 
+3. 单击“下一步:详细信息”。  提交真实的支持请求时，你需要提供尽可能多的信息，以便快速解决问题。 
 
-    <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We will STOP at this point. Do you understand how to submit a support request?
+    **注意：** 我们将在此时停止。 你是否了解如何提交支持请求？
 
-4. Click <bpt id="p1">**</bpt>All support requests<ept id="p1">**</ept>. This is where your support requests are shown. An email is also sent to your email address containing details of the support request.
+4. 单击“所有支持请求”。 这是显示支持请求的地方。 还会向你的电子邮件地址发送一封电子邮件，其中包含支持请求的详细信息。
 
-花几分钟时间查看不同的支持计划。
+恭喜！ 你已查看了可用的支持计划选项，并练习了创建和监视新的支持请求。
 
 **注意**：单击此处了解有关[创建 Azure 支持票证](https://azure.microsoft.com/en-us/support/create-ticket)的详细信息。

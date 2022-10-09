@@ -43,15 +43,15 @@ wts:
 
 6. 保留其余默认值，然后单击页面底部的“查看 + 创建”按钮。
 
-7. Once Validation is passed click the <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> button. It can take about five minutes to deploy the virtual machine.
+7. 验证通过后，单击“创建”按钮。 部署虚拟机大约需要五分钟时间。
 
-8. Monitor the deployment. It may take a few minutes for the resource group and virtual machine to be created. 
+8. 监视部署。 创建资源组和虚拟机可能需要几分钟时间。 
 
 9. 在部署边栏选项卡或从“通知”区域，单击“前往资源”。 
 
 10. 在 SimpleWinVM 虚拟机边栏选项卡上，单击“联网”，查看“入站端口规则”选项卡，并注意没有与虚拟机的网络接口或网络接口所连接的子网关联的网络安全组  。
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Identify the name of the network interface. You will need it in the next task.
+    **注意**：识别网络接口的名称。 在下一个任务中需要使用它。
 
 # <a name="task-2-create-a-network-security-group"></a>任务 2：创建网络安全组
 
@@ -84,14 +84,14 @@ wts:
 
 2. 在“概述”窗格中，单击“连接”。
 
-3. Attempt to connect to the virtual machine by selecting RDP and downloading an running the RDP file. By default the network security group does not allow RDP. Close the error window. 
+3. 尝试通过选择 RDP 和下载并运行 RDP 文件来连接到虚拟机。 默认情况下，网络安全组不允许 RDP。 关闭错误窗口。 
 
 
     ![显示“虚拟机连接失败”错误消息的屏幕截图。](../images/1201.png)
 
 4. 在虚拟机边栏选项卡上，向下滚动到“设置”部分，单击“联网”，然后注意“myNSGSecure（附加到网络接口: myVMNic）”网络安全组的入站规则拒绝除虚拟网络和负载均衡器探测中的流量外的所有入站流量  。
 
-5. On the <bpt id="p1">**</bpt>Inbound port rules<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Add inbound port rule<ept id="p2">**</ept> . Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> when you are done. 
+5. 在“入站端口规则”选项卡中，单击“添加入站端口规则”。 完成后单击“添加”****。 
 
     | 设置 | 值 |
     | -- | -- |
@@ -104,7 +104,7 @@ wts:
     | 优先级 | **300** |
     | 名称 | AllowRDP |
 
-6. Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> and wait for the rule to be provisioned and then try again to RDP into the virtual machine by going back to <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept> This time you should be successful. Remember the user is <bpt id="p1">**</bpt>azureuser<ept id="p1">**</ept> and the password is <bpt id="p2">**</bpt>Pa$$w0rd1234<ept id="p2">**</ept>.
+6. 选择“添加”并等待系统预配该规则，然后通过返回到“连接”再次尝试使用 RDP 连接到虚拟机。这次应会成功 。 记住用户是“azureuser”，密码是“Pa$$w0rd1234” 。
 
 # <a name="task-4-configure-an-outbound-security-port-rule-to-deny-internet-access"></a>任务 4：配置出站安全端口规则以拒绝 Internet 访问
 
@@ -114,7 +114,7 @@ wts:
 
 2. 计算机启动后，打开 Internet Explorer 浏览器。 
 
-3. Verify that you can access <bpt id="p1">**</bpt><ph id="ph1">https://www.bing.com</ph><ept id="p1">**</ept> and then close Internet Explorer. You will need to work through the IE enhanced security pop-ups. 
+3. 验证是否可以访问 **https://www.bing.com** ，然后关闭 Internet Explorer。 你将需要通过 IE 增强安全性弹出窗口进行工作。 
 
     **注意**：现在，我们将配置一个规则以拒绝出站 Internet 访问。 
 
@@ -122,9 +122,9 @@ wts:
 
 5. 在“设置”下，单击“联网”，然后单击“出站端口规则”  。
 
-6. Notice there is a rule, <bpt id="p1">**</bpt>AllowInternetOutbound<ept id="p1">**</ept>. This a default rule and cannot be removed. 
+6. 注意有一条规则为“AllowInternetOutbound”。 这是默认规则，无法删除。 
 
-7. Click <bpt id="p1">**</bpt>Add outbound port rule<ept id="p1">**</ept> to the right of the <bpt id="p2">**</bpt>myNSGSecure  (attached to network interface: myVMNic)<ept id="p2">**</ept> network security group and configure a new outbound security rule with a higher priority that will deny internet traffic. Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> when you are finished. 
+7. 单击“myNSGSecure（附加到网络接口：myVMNic）”网络安全组右侧的“添加出站端口规则”，然后配置具有更高优先级的新出站安全规则，该规则将拒绝 Internet 流量 。 完成后，单击“添加”。 
 
     | 设置 | 值 |
     | -- | -- |
@@ -140,6 +140,6 @@ wts:
 
 8. 单击“添加”以返回到 RDP 的 VM。 
 
-9. Browse to <bpt id="p1">**</bpt><ph id="ph1">https://www.microsoft.com</ph><ept id="p1">**</ept>. The page should not display. You may need to work through additional IE enhanced security pop-ups.  
+9. 浏览到 **https://www.microsoft.com**。 该页面应该不会显示。 你可能需要通过其他 IE 增强安全性弹出窗口进行工作。  
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。

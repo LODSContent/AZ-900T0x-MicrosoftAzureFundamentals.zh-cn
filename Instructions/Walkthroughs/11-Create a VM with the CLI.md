@@ -19,7 +19,7 @@ wts:
    
 3. 在“欢迎使用 Azure Cloud Shell”对话框中，当系统提示选择 Bash 或 PowerShell 时，选择 Bash  。 
 
-4. A new window will open stating <bpt id="p1">**</bpt>You have no storage mounted<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>advanced settings<ept id="p1">**</ept>.
+4. 此时将打开一个新窗口，指示“你没有安装任何存储”。 选择“高级设置”。
 
 5. 在“高级设置”屏幕中，填写以下字段，然后单击“创建存储”：
     - 资源组：创建新的资源组
@@ -42,7 +42,7 @@ wts:
     az group list --output table
     ```
 
-4. In Cloud Shell enter the command below and make sure that each line, except for the last one, is followed by the backslash (<ph id="ph1">`\`</ph>) character. If you type the whole command on the same line, do not use any backslash characters. 
+4. 在 Cloud Shell 中输入以下命令并确保每一行后面都有反斜杠 (`\`) 字符（最后一行除外）。 如果在同一行键入完整命令，请勿使用反斜杠字符。 
 
     ```cli
     az vm create \
@@ -56,7 +56,7 @@ wts:
 
     >**注意**：如果在 Windows 计算机上使用此命令行，请将反斜杠 (`\`) 字符替换为脱字符 (`^`)。
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The command will take 2 to 3 minutes to complete. The command will create a virtual machine and various resources associated with it such as storage, networking and security resources. Do not continue to the next step until the virtual machine deployment is complete. 
+    **注意**：该命令将需要 2 至 3 分钟才能完成。 该命令将创建一个虚拟机以及与之关联的各种资源，例如存储、网络和安全资源。 在虚拟机部署完成之前，请勿继续进行下一步。 
 
 5. 命令完成运行后，在浏览器窗口关闭 Cloud Shell 窗格。
 
@@ -73,19 +73,19 @@ wts:
 
 2. 确保在 Cloud Shell 窗格左上方的下拉菜单中选择 Bash。
 
-3. Retrieve information about the virtual machine you provisioned, including name, resource group, location, and status. Notice the PowerState is <bpt id="p1">**</bpt>running<ept id="p1">**</ept>.
+3. 检索有关你预配的虚拟机的信息，包括名称、资源组、位置和状态。 注意 PowerState 为“正在运行”。
 
     ```cli
     az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
     ```
 
-4. Stop the virtual machine. Notice the message that billing continues until the virtual machine is deallocated. 
+4. 停止虚拟机。 请注意提示在虚拟机解除分配之前都将继续计费的消息。 
 
     ```cli
     az vm stop --resource-group myRGCLI --name myVMCLI
     ```
 
-5. Verify your virtual machine status. The PowerState should now be <bpt id="p1">**</bpt>stopped<ept id="p1">**</ept>.
+5. 验证你的虚拟机状态。 PowerState 现在应为“已停止”。
 
     ```cli
     az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
@@ -99,7 +99,7 @@ wts:
 
 1. 从“所有服务”边栏选项卡，搜索并选择“顾问” 。 
 
-2. On the <bpt id="p1">**</bpt>Advisor<ept id="p1">**</ept> blade, select <bpt id="p2">**</bpt>Overview<ept id="p2">**</ept>. Notice recommendations are grouped by Reliability, Security, Performance, and Cost. 
+2. 在“顾问”边栏选项卡中，选择“概述”。 请注意，按可靠性、安全性、性能和成本对建议进行分组。 
 
     ![顾问“概述”页面的屏幕截图。 ](../images/1103.png)
 
@@ -115,6 +115,6 @@ wts:
 
 6. 如有时间，请继续尝试使用 Azure CLI。 
 
-Congratulations! You have configured Cloud Shell, created a virtual machine using Azure CLI, practiced with Azure CLI commands, and viewed Advisor recommendations.
+恭喜！ 你已配置了 Cloud Shell，使用 Azure CLI 创建了虚拟机，使用 Azure CLI 命令进行了练习，并查看了顾问建议。
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。

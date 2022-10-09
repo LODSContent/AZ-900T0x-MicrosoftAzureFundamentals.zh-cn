@@ -13,9 +13,9 @@ wts:
 
 1. 登录 [Azure 门户](https://portal.azure.com)。
 
-2. From the <bpt id="p1">**</bpt>All services<ept id="p1">**</ept> blade, search for and select <bpt id="p2">**</bpt>Policy<ept id="p2">**</ept>, under the <bpt id="p3">**</bpt>Authoring<ept id="p3">**</ept> section click <bpt id="p4">**</bpt>Definitions<ept id="p4">**</ept>.  Take a moment to review the list of built-in policy definitions. For example, in the <bpt id="p1">**</bpt>Category<ept id="p1">**</ept> drop-down select only <bpt id="p2">**</bpt>Compute<ept id="p2">**</ept>. Notice the <bpt id="p1">**</bpt>Allowed virtual machine size SKUs<ept id="p1">**</ept> definition enables you to specify a set of virtual machine SKUs that your organization can deploy.
+2. 在“所有服务”边栏选项卡中，搜索并选择“策略”，在“创作”部分，单击“定义”。  花一点时间查看内置策略定义列表。 例如，在“类别”下拉列表中，仅选择“计算” 。 注意，利用“允许的虚拟机大小 SKU”定义，可以指定组织可部署的一组虚拟机 SKU。
 
-3. Return to the <bpt id="p1">**</bpt>Policy<ept id="p1">**</ept> page, under the <bpt id="p2">**</bpt>Authoring<ept id="p2">**</ept> section click <bpt id="p3">**</bpt>Assignments<ept id="p3">**</ept>. An assignment is a policy that has been assigned to take place within a specific scope. For example, a definition could be assigned to the subscription scope. 
+3. 返回到“策略”页面，在“创作”部分下单击“分配”。 分配即为在特定范围内分配策略以供执行。 例如，可以将定义分配给订阅范围。 
 
 4. 单击“策略 - 分配”页面顶部的“分配策略” 。
 
@@ -28,11 +28,11 @@ wts:
     | 分配名称 | 允许的位置 |
     
     ![此屏幕截图显示了“范围”窗格，其中已填写字段值，并突出显示“选择”按钮。 ](../images/1402.png)
-6. On the <bpt id="p1">**</bpt>Parameters<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Japan West<ept id="p2">**</ept>. Click <bpt id="p1">**</bpt>Review + create<ept id="p1">**</ept>, and then <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+6. 在“参数”选项卡中，选择“日本西部” 。 单击“查看 + 创建”，然后再单击“创建” 。
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: A scope determines what resources or grouping of resources the policy assignment applies to. In our case we could assign this policy to a specific resource group, however we chose to assign the policy at subscription level. Be aware that resources can be excluded based on the scope configuration. Exclusions are optional.
+    **注意**：范围确定策略分配将应用到的资源或资源组。 在本例中，我们可以将此策略分配给特定的资源组，但我们选择在订阅级别分配该策略。 请注意，可以根据范围配置排除资源。 排除是可选的。
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: This <bpt id="p2">**</bpt>Allowed Locations<ept id="p2">**</ept> policy definition will specify a location into which all resources must be deployed. If a different location is chosen, deployment will not be allowed. For more information view the <bpt id="p1">[</bpt>Azure Policy Samples<ept id="p1">](https://docs.microsoft.com/en-us/azure/governance/policy/samples/index)</ept> page.
+    **注意**：这一“允许的位置”策略定义将指定所有资源必须部署到的位置。 如果选择其他位置，将不允许部署。 有关详细信息，请参阅 [Azure 策略示例](https://docs.microsoft.com/en-us/azure/governance/policy/samples/index)页面。
 
    ![此屏幕截图显示了“可用定义”窗格，其中突出显示了各个字段，并且选中了“审核未使用托管磁盘的 VM”选项。](../images/1403.png)
 
@@ -44,7 +44,7 @@ wts:
 
 1. 在 Azure 门户的“所有服务”边栏选项卡中，搜索并选择“存储帐户”，然后单击“+ 创建”  。
 
-2. Configure the storage account (replace <bpt id="p1">**</bpt>xxxx<ept id="p1">**</ept> in the name of the storage account with letters and digits such that the name is globally unique). Leave the defaults for everything else. 
+2. 配置存储帐户（将存储帐户名称中的 xxxx 替换为字母和数字，使该名称在全局范围内唯一）。 所有其他设置均保留默认值。 
 
     | 设置 | 值 | 
     | --- | --- |
@@ -67,20 +67,20 @@ wts:
 
     **注意**：在“策略”边栏选项卡上，你可以查看已分配的各种策略的合规性状态。
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The Allowed location policy may show non-compliant resources. If so, these are resources created prior to the policy assignment.
+    **注意**：“允许的位置”策略可能会显示不合规资源。 如果出现这种情况，就表示这些资源先于策略分配创建。
  
 2. 单击“允许的位置”，这将打开“允许的位置”策略合规性窗口。
 
-3. 在“所有服务”边栏选项卡中，搜索并选择“策略”，在“创作”部分，单击“定义”。
+3. 在顶部菜单中单击“删除分配”。 单击“是”确认要删除策略分配
 
    ![“删除分配”菜单项的屏幕截图。](../images/1407.png)
 
 4. 尝试创建另一个存储帐户，确保该策略不再有效。
 
     **注意**：“允许的位置”策略适用于以下常见场景： 
-    - 花一点时间查看内置策略定义列表。 
+    - *成本跟踪*：你可以在不同的区域位置使用不同的订阅。 此策略将确保所有资源都部署到目标区域以帮助进行成本跟踪。 
     - *数据驻留和安全合规性*：你还可能具有数据驻留要求，按客户或特定的工作负载创建订阅，并定义所有资源必须部署在特定数据中心中，以确保满足数据和安全合规性要求。
 
-例如，在“类别”下拉列表中，仅选择“计算” 。
+恭喜！ 你已创建一个 Azure 策略，用于将 Azure 资源的部署限制在特定数据中心。
 
-注意，利用“允许的虚拟机大小 SKU”定义，可以指定组织可部署的一组虚拟机 SKU。
+**注意**：为了避免产生额外费用，可以选择删除此资源组。 搜索资源组，单击你的资源组，然后单击“删除资源组”。 验证资源组的名称，然后单击“删除”。 关注“通知”，了解删除操作的进度。
